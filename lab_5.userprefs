@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A7C4A713-9ACD-4B62-80F9-82399BD5962D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab_5/PredicatCaculator.cs">
+    <Files>
+      <File FileName="lab_5/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="lab_5/PredicatCaculator.cs" Line="45" Column="80" />
+      <File FileName="lab_5/PredicatProccessor.cs" Line="32" Column="83" />
+      <File FileName="lab_5/SourceCodeProccessor.cs" Line="1" Column="8" />
+      <File FileName="lab_5/TestPredicat.cs" Line="26" Column="23" />
+      <File FileName="lab_5/Program.cs" Line="1" Column="1" />
+      <File FileName="lab_5/Consts.cs" Line="8" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>method.Invoke(predicatObject, new object[] { })</Value>
+          <Value>(IEnumerable&lt;object&gt;)method.Invoke(predicatObject, new object[] { })</Value>
+          <Value>methodResult as IEnumerable&lt;int&gt;</Value>
+          <Value>(IEnumerable&lt;object&gt;)methodResult</Value>
+          <Value>methodResult</Value>
+          <Value>(IEnumerable&lt;object&gt;)methodResult</Value>
+          <Value>cvantorsList[0].Key == operations.eUniversal</Value>
+          <Value>cvantorsList[0].Key</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.lab__5 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

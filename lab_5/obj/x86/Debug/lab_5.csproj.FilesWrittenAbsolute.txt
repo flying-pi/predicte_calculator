@@ -1,0 +1,14 @@
+/Users/yurabraiko/Projects/lab_5/lab_5/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/yurabraiko/Projects/lab_5/lab_5/obj/x86/Debug/lab_5.gtk-gui.gui.stetic
+/Users/yurabraiko/Projects/lab_5/lab_5/bin/Debug/lab_5.exe.mdb
+/Users/yurabraiko/Projects/lab_5/lab_5/bin/Debug/lab_5.exe
+/Users/yurabraiko/Projects/lab_5/lab_5/obj/x86/Debug/lab_5.exe
+/Users/yurabraiko/Projects/lab_5/lab_5/obj/x86/Debug/lab_5.exe.mdb
+/Users/yurabraiko/Projects/lab_5/lab_5/bin/Debug/System.Collections.Immutable.dll
+/Users/yurabraiko/dev/C#/lab_5/lab_5/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/yurabraiko/dev/C#/lab_5/lab_5/obj/x86/Debug/lab_5.gtk-gui.gui.stetic
+/Users/yurabraiko/dev/C#/lab_5/lab_5/bin/Debug/lab_5.exe.mdb
+/Users/yurabraiko/dev/C#/lab_5/lab_5/bin/Debug/lab_5.exe
+/Users/yurabraiko/dev/C#/lab_5/lab_5/obj/x86/Debug/lab_5.exe
+/Users/yurabraiko/dev/C#/lab_5/lab_5/obj/x86/Debug/lab_5.exe.mdb
+/Users/yurabraiko/dev/C#/lab_5/lab_5/bin/Debug/System.Collections.Immutable.dll

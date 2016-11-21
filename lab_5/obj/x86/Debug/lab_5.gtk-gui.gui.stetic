@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/lab_5.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="900 910">
+    <property name="MemberName" />
+    <property name="WidthRequest">900</property>
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="sourceCodeField">
+                <property name="MemberName" />
+                <property name="WidthRequest">800</property>
+                <property name="HeightRequest">500</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes">using System;
+using System.Collections.Generic;
+
+public class PredicatеSource
+{
+	public bool predicateP(string x)
+	{
+		return (x).Length &gt; 1;
+	}
+
+	public List&lt;string&gt; argxOfP()
+	{
+		List&lt;string&gt; result = new List&lt;string&gt;();
+		for (int i = 1; i &lt; 10; result.Add((i++ + 7).ToString())) ;
+		return result;
+	}
+
+
+	public List&lt;string&gt; argyOfP()
+	{
+		List&lt;string&gt; result = new List&lt;string&gt;();
+		for (int i = 1; i &lt; 10; result.Add(i++.ToString())) ;
+		return result;
+	}
+
+	public bool predicateStringPredicat(string Str)
+	{
+		string[] puts = Str.Split(new char[] { ' ' });
+		foreach (var s in puts)
+		{
+			if (getCountSubItem(puts,s) &gt; 2)
+				return true;
+		}
+		return false;
+	}
+
+	public int getCountSubItem(string[] source, string item)
+	{
+		int result = 0;
+		foreach (var s in source)
+			result += (s == item) ? 1 : 0;
+		return result;
+	}
+
+	public List&lt;string&gt; argStrOfStringPredicat()
+	{
+		string filePath = "/Users/yurabraiko/Documents/source.txt";
+		return new List&lt;string&gt;(System.IO.File.ReadAllLines(filePath));
+	}
+
+}</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">150</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="WidthRequest">800</property>
+            <property name="HeightRequest">130</property>
+            <property name="LabelProp" translatable="yes">Інструкції:  
+
+Поле нижче предназначення для введення коду котрий відповіда за роботу придикатів. Код повинен мати наступну сигнатуру  -  це має бути клас з ім'ям PredicatеSource. Він повинен містити публічні методи, котрі будут мати наступну сигнатуру: predicateІм'яПредиката для задання нового предикату.  Метод повинен повертати логічне значення.  На віхд може отримувати будь які параметри з будь яким ім'ям та будь яким типом.  Для задання множини значення для аргументів предикату потрібно написати метод котрий буде повертати об'єкт типу System.Collections.IEnumerable і мати наступну структуру імені argІм'япредикату_Ім'яАругменту. Окрім зазначених структур коду він також містити довільні елементи(нові класи,  методи....) </property>
+            <property name="Wrap">True</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">10</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="loadFromFileBtn">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Завантажити з файлу</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">670</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="CompileBtn">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Скомпілювати</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">150</property>
+            <property name="Y">670</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="processPredicats">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Перейти до робот з предикатами</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">300</property>
+            <property name="Y">670</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">800</property>
+            <property name="HeightRequest">100</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="errorList">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">710</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="cursorPoistion">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="X">700</property>
+            <property name="Y">675</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="PredicatManipulator" design-size="900 708">
+    <property name="MemberName" />
+    <property name="WidthRequest">900</property>
+    <property name="HeightRequest">700</property>
+    <property name="Title" translatable="yes">PredicatManipulator</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed2">
+        <property name="MemberName" />
+        <property name="WidthRequest">900</property>
+        <property name="HeightRequest">700</property>
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">880</property>
+            <property name="HeightRequest">200</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="PredicatSignature">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">10</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="expression">
+            <property name="MemberName" />
+            <property name="WidthRequest">795</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">290</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="WidthRequest">880</property>
+            <property name="LabelProp" translatable="yes">Інструкція: 
+
+Для того аби примінити квантор загальності потрібно ввести символ "~" на клавітурі.  Для квантору існування слід ввестисимвол "#".  Для того аби додати заперечення використовується символ "!"</property>
+            <property name="Wrap">True</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">218</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="Calculate">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Обрахувати</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">810</property>
+            <property name="Y">287</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">880</property>
+            <property name="HeightRequest">370</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="result">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">325</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="lab_5.PredicatCaculator" design-size="900 700">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">PredicatCaculator</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed3">
+        <property name="MemberName" />
+        <property name="WidthRequest">900</property>
+        <property name="HeightRequest">700</property>
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">880</property>
+            <property name="HeightRequest">200</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="PredicatSignature">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">10</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="WidthRequest">855</property>
+            <property name="LabelProp" translatable="yes">Інструкція: 
+
+Для того аби примінити квантор загальності потрібно ввести символ "~" на клавітурі.  Для квантору існування слід ввестисимвол "#".  Для того аби додати заперечення використовується символ "!". Для введеня декількох виразів в якості символа розділення використовувати ";"</property>
+            <property name="Wrap">True</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">220</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="userInput">
+            <property name="MemberName" />
+            <property name="WidthRequest">790</property>
+            <property name="CanFocus">True</property>
+            <property name="Text" translatable="yes">(∃x)(StringPredicat(Str));(∀x)(StringPredicat(Str));(∃x)(¬StringPredicat(Str));(∀x)(¬StringPredicat(Str));</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">300</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="calculate">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Обчислити</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">810</property>
+            <property name="Y">297</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">880</property>
+            <property name="HeightRequest">350</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="resultView">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">335</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
